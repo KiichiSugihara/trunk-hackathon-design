@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>main-page</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: main_page;
+	}
+	#main_page * {
+		margin: 0;
+		padding: 0;
+	}
+	#main_page {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 1172px;
+		background-color: rgba(51,51,51,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: main-page;
+		--web-view-id: main_page;
+		--web-enable-deep-linking: true;
+	}
+	#Navigation_Bar {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 88.25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Background {
+		opacity: 1;
+		filter: drop-shadow(0px 0.5px 0px rgba(0, 0, 0, 0.302)) blur(10px);
+		fill: rgba(248,248,248,0.82);
+	}
+	.Background {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 88px;
+		left: 0px;
+		top: 0px;
+	}
+	#Separator {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgba(0, 0, 0, 0.3);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Separator {
+		overflow: visible;
+		position: absolute;
+		top: 88.25px;
+		left: 0px;
+		width: 375px;
+		height: 0.5px;
+	}
+	#Title {
+		opacity: 1;
+		position: absolute;
+		left: 32px;
+		top: 55px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 312px;
+		height: 22px;
+		line-height: 22px;
+		margin-top: -2.5px;
+		text-align: center;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(0,0,0,1);
+		letter-spacing: -0.0040999999642372135px;
+	}
+	#Status_Bar {
+		opacity: 1;
+		position: absolute;
+		width: 339.328px;
+		height: 18px;
+		left: 21px;
+		top: 14.33px;
+		overflow: visible;
+	}
+	#Battery {
+		opacity: 1;
+		position: absolute;
+		width: 24.328px;
+		height: 11.333px;
+		left: 315px;
+		top: 3.003px;
+		overflow: visible;
+	}
+	#Border {
+		opacity: 0.35;
+		fill: rgba(0,0,0,0);
+		stroke: rgb(0, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	.Border {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 11.333px;
+		left: 0px;
+		top: 0px;
+	}
+	#Cap {
+		opacity: 0.4;
+		fill: rgba(0,0,0,1);
+	}
+	.Cap {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3.667px;
+		left: 23px;
+		width: 1.328px;
+		height: 4px;
+	}
+	#Capacity {
+		opacity: 1;
+		fill: rgba(0,0,0,1);
+	}
+	.Capacity {
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		height: 7.333px;
+		left: 2px;
+		top: 2px;
+	}
+	#Wifi {
+		opacity: 1;
+		fill: rgba(0,0,0,1);
+	}
+	.Wifi {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3.001px;
+		left: 294.694px;
+		width: 15.272px;
+		height: 10.966px;
+	}
+	#Cellular_Connection {
+		opacity: 1;
+		fill: rgba(0,0,0,1);
+	}
+	.Cellular_Connection {
+		transform: matrix(1,0,0,1,0,0);
+		overflow: visible;
+		position: absolute;
+		top: 3.337px;
+		left: 272.667px;
+		width: 17px;
+		height: 10.667px;
+	}
+	#Time_Style {
+		opacity: 1;
+		position: absolute;
+		width: 54px;
+		height: 18px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#__Time {
+		opacity: 1;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 55px;
+		height: 18px;
+		text-align: center;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+		letter-spacing: -0.2px;
+	}
+	#Safe_Area___Portrait {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 724px;
+		left: 0px;
+		top: 88px;
+		overflow: visible;
+	}
+	#Safe_Area___Portrait_backgroun {
+		opacity: 1;
+		fill: rgba(0,0,0,0);
+	}
+	.Safe_Area___Portrait_backgroun {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 724px;
+		left: 0px;
+		top: 0px;
+	}
+	#Safe_Area {
+		opacity: 1;
+		fill: rgba(76,217,100,0.4);
+	}
+	.Safe_Area {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 724px;
+		left: 0px;
+		top: 0px;
+	}
+	#Layout_Margin__Right {
+		opacity: 1;
+		fill: rgba(90,200,250,0.4);
+	}
+	.Layout_Margin__Right {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 724px;
+		left: 359px;
+		top: 0px;
+	}
+	#Layout_Margin__Left {
+		opacity: 1;
+		fill: rgba(90,200,250,0.4);
+	}
+	.Layout_Margin__Left {
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		height: 724px;
+		left: 0px;
+		top: 0px;
+	}
+	#______ {
+		opacity: 1;
+		fill: rgba(170,129,129,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.______ {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 235px;
+		left: 0px;
+		top: 88px;
+	}
+	#Display_Shape {
+		opacity: 1;
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Display_Shape_A1_Rectangle_9 {
+		opacity: 1;
+		fill: url(#Display_Shape_A1_Rectangle_10_pattern);
+	}
+	.Display_Shape_A1_Rectangle_9 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+	}
+	#_________ {
+		opacity: 1;
+		fill: rgba(229,229,231,1);
+	}
+	._________ {
+		position: absolute;
+		overflow: visible;
+		width: 356px;
+		height: 37px;
+		left: 10px;
+		top: 42px;
+	}
+	#products {
+		opacity: 1;
+		position: absolute;
+		width: 347px;
+		height: 835px;
+		left: 9px;
+		top: 337px;
+		overflow: hidden;
+	}
+	#products_0 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 8.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#product_area {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_14_pattern);
+	}
+	.photo {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#KUA_AINA {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID580_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_1 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 185.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_15 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_16 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_17_pattern);
+	}
+	.photo_A1_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_6 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#Ristorante {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID860_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_2 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 8.5px;
+		top: 220px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_18 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_19 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_20_pattern);
+	}
+	.photo_A1_Rectangle_19 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_9 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#Messina {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID320_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_3 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 185.5px;
+		top: 220px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_21 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_22 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_23_pattern);
+	}
+	.photo_A1_Rectangle_22 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_12 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#G_L_B {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID420_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_4 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 8.5px;
+		top: 434px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_24 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_24 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_25 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_26_pattern);
+	}
+	.photo_A1_Rectangle_25 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_15 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#store {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID700_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_5 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 185.5px;
+		top: 434px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_27 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_27 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_28 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_29_pattern);
+	}
+	.photo_A1_Rectangle_28 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_18 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#OgamiStudio {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID120_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_6 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 8.5px;
+		top: 648px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_30 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_31 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_32_pattern);
+	}
+	.photo_A1_Rectangle_31 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_21 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#Bale {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID350_ {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#products_7 {
+		opacity: 1;
+		position: absolute;
+		width: 162.5px;
+		height: 181px;
+		left: 185.5px;
+		top: 648px;
+		overflow: visible;
+	}
+	#product_area_A1_Rectangle_33 {
+		opacity: 1;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+	}
+	.product_area_A1_Rectangle_33 {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 199px;
+		left: 0.5px;
+		top: 0px;
+	}
+	#photo_A1_Rectangle_34 {
+		opacity: 1;
+		fill: url(#photo_A1_Rectangle_35_pattern);
+	}
+	.photo_A1_Rectangle_34 {
+		position: absolute;
+		overflow: visible;
+		width: 162px;
+		height: 96px;
+		left: 0px;
+		top: 0px;
+	}
+	#product_A1_Text_24 {
+		opacity: 1;
+		position: absolute;
+		left: 12px;
+		top: 105px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 146px;
+		height: 27px;
+		text-align: left;
+		font-family: Hiragino Kaku Gothic Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(51,51,51,1);
+	}
+	#Takoyuki {
+		opacity: 1;
+		position: absolute;
+		left: 13px;
+		top: 132px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 76px;
+		height: 27px;
+		text-align: left;
+		font-family: Open Sans Condensed;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(51,51,51,1);
+	}
+	#ID420__A1_Text_26 {
+		opacity: 1;
+		position: absolute;
+		left: 88.5px;
+		top: 146px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 69px;
+		height: 27px;
+		text-align: right;
+		font-family: Hiragino Kaku Gothic ProN;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(51,51,51,1);
+	}
+	#Home_Indicator {
+		opacity: 1;
+		position: absolute;
+		width: 134px;
+		height: 5px;
+		left: 121px;
+		top: 798px;
+		overflow: visible;
+	}
+	#Home_Indicator_A1_Rectangle_36 {
+		opacity: 1;
+		fill: rgba(0,0,0,1);
+	}
+	.Home_Indicator_A1_Rectangle_36 {
+		position: absolute;
+		overflow: visible;
+		width: 134px;
+		height: 5px;
+		left: 0px;
+		top: 0px;
+	}
+</style>
+</head>
+<body>
+<div id="main_page">
+	<div id="Navigation_Bar">
+		<svg class="Background">
+			<rect id="Background" rx="0" ry="0" x="0" y="0" width="375" height="88">
+			</rect>
+		</svg>
+		<svg class="Separator">
+			<path id="Separator" d="M 0 0 L 375 0">
+			</path>
+		</svg>
+		<div id="Title">
+			<span>Title</span>
+		</div>
+	</div>
+	<div id="Status_Bar">
+		<div id="Battery">
+			<svg class="Border">
+				<rect id="Border" rx="2.6666667461395264" ry="2.6666667461395264" x="0" y="0" width="22" height="11.333">
+				</rect>
+			</svg>
+			<svg viewBox="0 0 1.328 4" class="Cap">
+				<path id="Cap" d="M 0 0 L 0 4 C 0.8047311305999756 3.661223411560059 1.328037977218628 2.873133182525635 1.328037977218628 2 C 1.328037977218628 1.126866698265076 0.8047311305999756 0.3387765288352966 0 0">
+				</path>
+			</svg>
+			<svg class="Capacity">
+				<rect id="Capacity" rx="1.3333333730697632" ry="1.3333333730697632" x="0" y="0" width="18" height="7.333">
+				</rect>
+			</svg>
+		</div>
+		<svg viewBox="0 0 15.272 10.966" class="Wifi">
+			<undefined id="Wifi" d="M 7.636500358581543 10.96560001373291 C 7.553820133209229 10.96560001373291 7.473130226135254 10.93181037902832 7.41510009765625 10.87290000915527 L 5.417100429534912 8.856900215148926 C 5.355820178985596 8.796520233154297 5.321700096130371 8.712539672851562 5.323500156402588 8.626500129699707 C 5.325290203094482 8.540619850158691 5.363010406494141 8.458290100097656 5.427000045776367 8.400600433349609 C 6.043790340423584 7.878690242767334 6.828470230102539 7.591279983520508 7.636500358581543 7.591279983520508 C 8.444530487060547 7.591279983520508 9.229209899902344 7.878699779510498 9.846000671386719 8.400600433349609 C 9.909970283508301 8.457460403442383 9.947690010070801 8.539790153503418 9.94950008392334 8.626500129699707 C 9.951300621032715 8.712539672851562 9.917180061340332 8.796520233154297 9.855899810791016 8.856900215148926 L 7.857900142669678 10.87290000915527 C 7.799020290374756 10.93268013000488 7.720390319824219 10.96560001373291 7.636500358581543 10.96560001373291 Z M 11.144700050354 7.427700042724609 C 11.06471061706543 7.427700042724609 10.9886302947998 7.397650241851807 10.93050003051758 7.343100070953369 C 10.02611064910889 6.524199962615967 8.856280326843262 6.073200225830078 7.636500358581543 6.073200225830078 C 6.41756010055542 6.073200225830078 5.248690128326416 6.524189949035645 4.345200061798096 7.343100070953369 C 4.287070274353027 7.397650241851807 4.210990428924561 7.427700042724609 4.13100004196167 7.427700042724609 C 4.048010349273682 7.427700042724609 3.970020294189453 7.395420074462891 3.911400318145752 7.336800098419189 L 2.7576003074646 6.170400142669678 C 2.695760250091553 6.108550071716309 2.662200212478638 6.026730060577393 2.663100242614746 5.940000057220459 C 2.663990259170532 5.853139877319336 2.698830127716064 5.771959781646729 2.761200189590454 5.711400032043457 C 4.090700149536133 4.47461986541748 5.82243013381958 3.793499946594238 7.637400150299072 3.793499946594238 C 9.452370643615723 3.793499946594238 11.18410015106201 4.47461986541748 12.51360034942627 5.711400032043457 C 12.57653999328613 5.772540092468262 12.6117000579834 5.853720188140869 12.61260032653809 5.940000057220459 C 12.61349010467529 6.025139808654785 12.57938003540039 6.109109878540039 12.51900005340576 6.170400142669678 L 11.36429977416992 7.336800098419189 C 11.3056697845459 7.395420074462891 11.22769069671631 7.427700042724609 11.144700050354 7.427700042724609 Z M 13.80420017242432 4.743000030517578 C 13.72325992584229 4.743000030517578 13.64719009399414 4.711999893188477 13.59000015258789 4.655700206756592 C 11.97506046295166 3.121779918670654 9.860730171203613 2.276999950408936 7.636500358581543 2.276999950408936 C 5.411370277404785 2.276999950408936 3.297040224075317 3.121769905090332 1.683000206947327 4.655700206756592 C 1.625820279121399 4.711989879608154 1.549740195274353 4.743000030517578 1.468800187110901 4.743000030517578 C 1.385810256004333 4.743000030517578 1.307820200920105 4.710720062255859 1.249200224876404 4.652100086212158 L 0.09360022097826004 3.485699892044067 C 0.03235022351145744 3.423549890518188 -0.0008897756924852729 3.342360019683838 2.24304201879022e-07 3.257100105285645 C 0.0009002243168652058 3.170560121536255 0.03510022535920143 3.089689970016479 0.09630022197961807 3.029400110244751 C 2.134430170059204 1.075860023498535 4.812250137329102 6.866454960174906e-09 7.636500358581543 6.866454960174906e-09 C 10.46075057983398 6.866454960174906e-09 13.13858032226562 1.075860023498535 15.17670059204102 3.029400110244751 C 15.23733043670654 3.090039968490601 15.2721004486084 3.173029899597168 15.2721004486084 3.257100105285645 C 15.27299022674561 3.342360019683838 15.23974990844727 3.423549890518188 15.17850017547607 3.485699892044067 L 14.02290058135986 4.652100086212158 C 13.96427059173584 4.710720062255859 13.88661003112793 4.743000030517578 13.80420017242432 4.743000030517578 Z">
+			</undefined>
+		</svg>
+		<svg viewBox="0 0 17 10.667" class="Cellular_Connection">
+			<undefined id="Cellular_Connection" d="M 16.00020027160645 10.6668004989624 L 15.00030040740967 10.6668004989624 C 14.44895076751709 10.6668004989624 14.00040054321289 10.2182502746582 14.00040054321289 9.666900634765625 L 14.00040054321289 0.999900221824646 C 14.00040054321289 0.4485502541065216 14.44895076751709 2.494811894848681e-07 15.00030040740967 2.494811894848681e-07 L 16.00020027160645 2.494811894848681e-07 C 16.55154991149902 2.494811894848681e-07 17.00010108947754 0.4485502541065216 17.00010108947754 0.999900221824646 L 17.00010108947754 9.666900634765625 C 17.00010108947754 10.2182502746582 16.55154991149902 10.6668004989624 16.00020027160645 10.6668004989624 Z M 11.33370018005371 10.6668004989624 L 10.33290100097656 10.6668004989624 C 9.781550407409668 10.6668004989624 9.333000183105469 10.2182502746582 9.333000183105469 9.666900634765625 L 9.333000183105469 3.333600282669067 C 9.333000183105469 2.782250165939331 9.781550407409668 2.333700180053711 10.33290100097656 2.333700180053711 L 11.33370018005371 2.333700180053711 C 11.88505077362061 2.333700180053711 12.3336009979248 2.782250165939331 12.3336009979248 3.333600282669067 L 12.3336009979248 9.666900634765625 C 12.3336009979248 10.2182502746582 11.88505077362061 10.6668004989624 11.33370018005371 10.6668004989624 Z M 6.666300773620605 10.6668004989624 L 5.66640043258667 10.6668004989624 C 5.115050315856934 10.6668004989624 4.666500568389893 10.2182502746582 4.666500568389893 9.666900634765625 L 4.666500568389893 5.66640043258667 C 4.666500568389893 5.115050315856934 5.115050315856934 4.666500091552734 5.66640043258667 4.666500091552734 L 6.666300773620605 4.666500091552734 C 7.218140602111816 4.666500091552734 7.667100429534912 5.115050315856934 7.667100429534912 5.66640043258667 L 7.667100429534912 9.666900634765625 C 7.667100429534912 10.2182502746582 7.218140602111816 10.6668004989624 6.666300773620605 10.6668004989624 Z M 1.999800562858582 10.6668004989624 L 0.9999005198478699 10.6668004989624 C 0.4485505521297455 10.6668004989624 5.447387820822769e-07 10.2182502746582 5.447387820822769e-07 9.666900634765625 L 5.447387820822769e-07 7.667100429534912 C 5.447387820822769e-07 7.115260124206543 0.4485505521297455 6.666300296783447 0.9999005198478699 6.666300296783447 L 1.999800562858582 6.666300296783447 C 2.551150560379028 6.666300296783447 2.999700546264648 7.115260124206543 2.999700546264648 7.667100429534912 L 2.999700546264648 9.666900634765625 C 2.999700546264648 10.2182502746582 2.551150560379028 10.6668004989624 1.999800562858582 10.6668004989624 Z">
+			</undefined>
+		</svg>
+		<div id="Time_Style">
+			<div id="__Time">
+				<span>9:41</span>
+			</div>
+		</div>
+	</div>
+	<div id="Safe_Area___Portrait">
+		<svg class="Safe_Area___Portrait_backgroun">
+			<rect id="Safe_Area___Portrait_backgroun" rx="0" ry="0" x="0" y="0" width="375" height="724">
+			</rect>
+		</svg>
+		<svg class="Safe_Area">
+			<rect id="Safe_Area" rx="0" ry="0" x="0" y="0" width="375" height="724">
+			</rect>
+		</svg>
+		<svg class="Layout_Margin__Right">
+			<rect id="Layout_Margin__Right" rx="0" ry="0" x="0" y="0" width="16" height="724">
+			</rect>
+		</svg>
+		<svg class="Layout_Margin__Left">
+			<rect id="Layout_Margin__Left" rx="0" ry="0" x="0" y="0" width="16" height="724">
+			</rect>
+		</svg>
+	</div>
+	<svg class="______">
+		<rect id="______" rx="0" ry="0" x="0" y="0" width="375" height="235">
+		</rect>
+	</svg>
+	<div id="Display_Shape">
+		<svg class="Display_Shape_A1_Rectangle_9">
+			<pattern elementId="Display_Shape_A1_Rectangle_10" id="Display_Shape_A1_Rectangle_10_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="Display_Shape_A1_Rectangle_10_pattern.png" xlink:href="Display_Shape_A1_Rectangle_10_pattern.png"></image>
+			</pattern>
+			<rect id="Display_Shape_A1_Rectangle_9" rx="0" ry="0" x="0" y="0" width="375" height="812">
+			</rect>
+		</svg>
+	</div>
+	<svg class="_________">
+		<rect id="_________" rx="12" ry="12" x="0" y="0" width="356" height="37">
+		</rect>
+	</svg>
+	<div id="products">
+		<div id="products_0">
+			<svg class="product_area">
+				<rect id="product_area" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo">
+				<pattern elementId="photo_A1_Rectangle_14" id="photo_A1_Rectangle_14_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_14_pattern.png" xlink:href="photo_A1_Rectangle_14_pattern.png"></image>
+				</pattern>
+				<rect id="photo" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product">
+				<span>ハンバーガー</span>
+			</div>
+			<div id="KUA_AINA">
+				<span>KUA AINA</span>
+			</div>
+			<div id="ID580_">
+				<span>580円</span>
+			</div>
+		</div>
+		<div id="products_1">
+			<svg class="product_area_A1_Rectangle_15">
+				<rect id="product_area_A1_Rectangle_15" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_16">
+				<pattern elementId="photo_A1_Rectangle_17" id="photo_A1_Rectangle_17_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_17_pattern.png" xlink:href="photo_A1_Rectangle_17_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_16" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_6">
+				<span>ボロネーゼ</span>
+			</div>
+			<div id="Ristorante">
+				<span>Ristorante</span>
+			</div>
+			<div id="ID860_">
+				<span>860円</span>
+			</div>
+		</div>
+		<div id="products_2">
+			<svg class="product_area_A1_Rectangle_18">
+				<rect id="product_area_A1_Rectangle_18" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_19">
+				<pattern elementId="photo_A1_Rectangle_20" id="photo_A1_Rectangle_20_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_20_pattern.png" xlink:href="photo_A1_Rectangle_20_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_19" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_9">
+				<span>苺アイスクリーム</span>
+			</div>
+			<div id="Messina">
+				<span>Messina</span>
+			</div>
+			<div id="ID320_">
+				<span>320円</span>
+			</div>
+		</div>
+		<div id="products_3">
+			<svg class="product_area_A1_Rectangle_21">
+				<rect id="product_area_A1_Rectangle_21" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_22">
+				<pattern elementId="photo_A1_Rectangle_23" id="photo_A1_Rectangle_23_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_23_pattern.png" xlink:href="photo_A1_Rectangle_23_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_22" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_12">
+				<span>豆と野菜のサラダ</span>
+			</div>
+			<div id="G_L_B">
+				<span>G・L・B</span>
+			</div>
+			<div id="ID420_">
+				<span>420円</span>
+			</div>
+		</div>
+		<div id="products_4">
+			<svg class="product_area_A1_Rectangle_24">
+				<rect id="product_area_A1_Rectangle_24" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_25">
+				<pattern elementId="photo_A1_Rectangle_26" id="photo_A1_Rectangle_26_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_26_pattern.png" xlink:href="photo_A1_Rectangle_26_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_25" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_15">
+				<span>マカロン</span>
+			</div>
+			<div id="store">
+				<span>store</span>
+			</div>
+			<div id="ID700_">
+				<span>700円</span>
+			</div>
+		</div>
+		<div id="products_5">
+			<svg class="product_area_A1_Rectangle_27">
+				<rect id="product_area_A1_Rectangle_27" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_28">
+				<pattern elementId="photo_A1_Rectangle_29" id="photo_A1_Rectangle_29_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_29_pattern.png" xlink:href="photo_A1_Rectangle_29_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_28" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_18">
+				<span>product</span>
+			</div>
+			<div id="OgamiStudio">
+				<span>OgamiStudio</span>
+			</div>
+			<div id="ID120_">
+				<span>120円</span>
+			</div>
+		</div>
+		<div id="products_6">
+			<svg class="product_area_A1_Rectangle_30">
+				<rect id="product_area_A1_Rectangle_30" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_31">
+				<pattern elementId="photo_A1_Rectangle_32" id="photo_A1_Rectangle_32_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_32_pattern.png" xlink:href="photo_A1_Rectangle_32_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_31" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_21">
+				<span>ティラミス</span>
+			</div>
+			<div id="Bale">
+				<span>Bale</span>
+			</div>
+			<div id="ID350_">
+				<span>350円</span>
+			</div>
+		</div>
+		<div id="products_7">
+			<svg class="product_area_A1_Rectangle_33">
+				<rect id="product_area_A1_Rectangle_33" rx="15" ry="15" x="0" y="0" width="162" height="181">
+				</rect>
+			</svg>
+			<svg class="photo_A1_Rectangle_34">
+				<pattern elementId="photo_A1_Rectangle_35" id="photo_A1_Rectangle_35_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="photo_A1_Rectangle_35_pattern.png" xlink:href="photo_A1_Rectangle_35_pattern.png"></image>
+				</pattern>
+				<rect id="photo_A1_Rectangle_34" rx="15" ry="15" x="0" y="0" width="162" height="96">
+				</rect>
+			</svg>
+			<div id="product_A1_Text_24">
+				<span>たこ焼き</span>
+			</div>
+			<div id="Takoyuki">
+				<span>Takoyuki</span>
+			</div>
+			<div id="ID420__A1_Text_26">
+				<span>420円</span>
+			</div>
+		</div>
+	</div>
+	<div id="Home_Indicator">
+		<svg class="Home_Indicator_A1_Rectangle_36">
+			<rect id="Home_Indicator_A1_Rectangle_36" rx="2.5" ry="2.5" x="0" y="0" width="134" height="5">
+			</rect>
+		</svg>
+	</div>
+</div>
+</body>
+</html>
